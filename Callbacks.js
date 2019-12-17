@@ -77,3 +77,22 @@
 // console.log(myArr);
 
 
+
+function buyMobile(){
+	console.log('i want to buy mobile');
+	console.log('i want go to shop');
+	console.log('i am at mobile shop');
+	console.log('Shopkeeper told me to wait for 3 hours for new phone');
+	setTimeout(function(){
+		console.log('Mobile arrived at shop');
+			console.log('I have a phone Samsung s10 PLus');
+		// return model;   //Note:- return can't work in the setTimeout function
+	}, 3000);
+}
+buyMobile();
+
+
+
+
+
+
