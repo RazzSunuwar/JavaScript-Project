@@ -38,3 +38,34 @@
 // // expected output: "Eagle"
 
 
+
+// Object Method Binding
+
+// var person = {
+// 	firstName: "Ray",
+// 	lastName: "Hang",
+// 	number: 1234567,
+
+// 	myFun : function(){
+// 		return this;
+// 	}
+// }
+// console.log(person);
+
+
+
+// var person = {
+// 	firstName: "Ray",
+// 	lastName: "Hang",
+// 	number: 1234567,
+
+// 	fullName : function(){
+// 		return this.firstName+ " "+ this.lastName;
+// 	}
+// }
+// console.log(person.fullName());
+
+
+
+
+
