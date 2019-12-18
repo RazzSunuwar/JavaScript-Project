@@ -18,3 +18,49 @@
 
 // c1_fun();
 // c2_fun();
+
+
+
+// Object Method Binding
+
+// var person = {
+// 	firstName: "Ray",
+// 	lastName: "Hang",
+// 	number: 1234567,
+
+// 	myFun : function(){
+// 		return this;
+// 	}
+// }
+// console.log(person);
+
+
+
+// var person = {
+// 	firstName: "Ray",
+// 	lastName: "Hang",
+// 	number: 1234567,
+
+// 	fullName : function(){
+// 		return this.firstName+ " "+ this.lastName;
+// 	}
+// }
+// console.log(person.fullName());
+
+
+
+// Explicit Function Binding
+
+// var person1 = {
+// 	fullName : function(){
+// 		return this.firstName + " " + this.lastName;
+// 	}
+// }
+
+// var person2 = {
+// 	firstName: "Ram",
+// 	lastName: "Abc"
+// }
+
+// var x = person1.fullName.call(person2);
+// console.log(x);
