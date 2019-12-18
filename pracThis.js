@@ -42,4 +42,4 @@ function Person(fn, ln){
 	}
 }
 let person = new Person ("Abc", "Xyz");
-person.displayName();
+person.displayName();		//Abc Xyz
