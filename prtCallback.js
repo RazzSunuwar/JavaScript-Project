@@ -11,12 +11,14 @@ complete some kind of routine or action.*/
 // myWord(show);
 
 
+// function show(a){
+// 	console.log('I am show function ' + a);
 // }
 // function shaw(callback){
 // 	var a = 100;
 // 	callback(a);
 // }
-// shaw(show);	
+// shaw(show);	 
 
 
 // function show(a){
@@ -62,7 +64,6 @@ in the first GO only. Example given above*/
 
 // function show(a){		//Callback function
 // 	console.log("I am show function " + a);
-
 // }
 
 // function task(callback){
@@ -76,7 +77,6 @@ in the first GO only. Example given above*/
 
 // function show(a){		//Callback function
 // 	console.log("I am show function " + a);
-
 // }
 
 // function task(a, callback){
@@ -126,24 +126,50 @@ in the first GO only. Example given above*/
 
 // Synchronous
 
-function show(){
-	console.log('I am show function');
+// function show(){
+// 	console.log('I am show function');
+// }
+// function shaw(callback){
+// 	callback();
+// }
+// shaw(show);
+// console.log("End");
+
+
+// // Asynchronous
+
+
+// setTimeout(function show(){
+// 	console.log('I am show function');
+// }, 3000);
+
+// console.log("End");
+
+
+
+
+// My first self made callback function
+
+// task part
+function ram(a){
+	setTimeout(function(){
+		console.log('I am ram');
+		console.log('My batch no is ' + a);
+	}, 3000);
 }
-function shaw(callback){
-	callback();
+console.log()
+
+//execuation part
+
+console.log('Hello Wolrld!');
+function rom(a, callback){
+callback(a);
 }
-shaw(show);
-console.log("End");
+ram(100, rom);
 
 
-// Asynchronous
 
 
-setTimeout(function show(){
-	console.log('I am show function');
-}, 3000);
-
-console.log("End");
 
 
 
