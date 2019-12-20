@@ -151,21 +151,53 @@ in the first GO only. Example given above*/
 // My first self made callback function
 
 // task part
-function ram(a){
-	setTimeout(function(){
-		console.log('I am ram');
-		console.log('My batch no is ' + a);
-	}, 3000);
-}
-console.log()
+// function ram(a){
+// 	setTimeout(function(){
+// 		console.log('I am ram');
+// 		console.log('My batch no is ' + a);
+// 	}, 3000);
+// }
+// console.log()
 
-//execuation part
+// //execuation part
 
-console.log('Hello Wolrld!');
-function rom(a, callback){
-callback(a);
-}
-ram(100, rom);
+// console.log('Hello Wolrld!');
+// function rom(a, callback){
+// callback(a);
+// }
+// ram(100, rom);
+
+
+
+//Task part
+
+// function getDetails(){
+// 	console.log('Checked Details');
+// }
+// function askMoney(amt, callback){		/* askMoney is higher order function and the value
+// 	which comes in argument is called callback function */ 
+// 	// console.log('What comes in >>', callback);
+// 	console.log('Mom told to me to wait for few days until salary arrived');
+// 	setTimeout(function(){
+// 		console.log('Salary of asked money arrived');
+// 		callback();
+// 	}, 3000);
+// }
+
+// // Executation part
+// console.log('I want to buy laptop.');
+// console.log('I don\'t have money so, i asked to my parents.');
+// askMoney(5000, function(){
+// 	console.log('Result of asked money arrived');
+// 	console.log('Now i should continue all the blocking works which need money');
+// 	console.log('Now goto laptop shop');
+// 	getDetails();	//Function call of getDetails here.
+// })
+
+// console.log('Eat foods');
+// console.log('Taking bath');
+// console.log('Going to office');
+
 
 
 
