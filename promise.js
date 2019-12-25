@@ -85,3 +85,6 @@ it provides a resulting value
 // .finally(function(){
 // 	console.log('Promise is settled');
 // });
+
+
+
