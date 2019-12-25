@@ -18,4 +18,3 @@ Description: Find elements by tag name*/
 document.getElementsByClassName(name)
 
 Description: Find elements by class name */
-
