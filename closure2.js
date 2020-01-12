@@ -88,10 +88,21 @@
 //         let innerMesg = "Welcome " + name + " to " + location;
 //         return innerMesg;
 //     }
-//     // let innerResult = setPlace("Kathmandu");
-//     // console.log("innerResult is ", innerResult);
 //     return setPlace;
 // }
 // let Res = welcome("Ram")("Nepal");   //Closure function will store in the Res
 // // console.log("Last Result is ", Res("Kathmandu"));
 // console.log("Last Result is ", Res);
+
+
+// Self Practice
+
+function myName(name){
+    function myAge(age){
+        let innerResult = "My name is " + name + ". " + "My age is " + age;
+        return innerResult;
+    }
+    return myAge;
+}
+let Result = myName("Ram");
+console.log("Result>>> ", Result(20));
