@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Closure</title>
+</head>
+<body>
+    <h2>Welcome to JavaScript Closure</h2>
+    <button type="button" onclick="myFunction()">Click Here</button>
+    <p id="demo"></p>
+<script>
+    // Example 1
+// var a = 4;
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = a * a;
+// }
+
+// Example 2
+// Initiate counter
+// var counter = 0;
+
+// Function to increment counter
+// function add() {
+//   counter += 1;
+// }
+
+// Call add() 3 times
+// add();
+// add();
+// add();
+
+// The counter should now be 3
+// document.getElementById("demo").innerHTML = "The counter is: " + counter;
+
+// Example 3
+// Initiate counter
+// var counter = 0;
+
+// Function to increment counter
+// function add() {
+//   var counter = 0; 
+//   counter += 1;
+// }
+
+// Call add() 3 times
+// add();
+// add();
+// add();
+
+// The result is not 3 because you mix up the global  and local counter
+// document.getElementById("demo").innerHTML = "The counter is: " + counter;
+
+// Example 4
+
+// Function to increment counter
+// function add() {
+//     var counter = 0;
+//     counter += 1;
+//     return counter;
+// }
+  
+  // Call add() 3 times
+//   add();
+//   add();
+//   add();
+  
+  //The counter should now be 3. But it is 1.
+
+// Example 4
+// Function to increment counter
+// function add() {
+//     var counter = 0;
+//     counter += 1;
+//     return counter;
+//   }
+//   // Trying to increment the counter
+//   function myFunction(){
+//     document.getElementById("demo").innerHTML = add();
+// }
+
+// Example 5
+// document.getElementById("demo").innerHTML = add();
+// function add() {
+//   var counter = 0;
+//   function plus() {counter += 1;}
+//   plus();  
+//   return counter; 
+// }
+
+// Example 6
+
+var add = (function () {
+  var counter = 0;
+  return function () {counter += 1; return counter;}
+})();
+
+function myFunction(){
+  document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+</body>
+</html>
