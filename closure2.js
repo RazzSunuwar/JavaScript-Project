@@ -55,7 +55,7 @@
 // 5 own scope
 
 
-// Example
+// Example 1
 // var welcome = "welcome";
 // function myName(name){
 //     let to = "to";
@@ -67,3 +67,31 @@
 //     myPlace("kathamandu");
 // }
 // myName("Ronald");
+
+
+// Example 2    Static 
+// function welcome(name){
+//     function setPlace(location){
+//         let innerMesg = "Welcome " + name + " to " + location;
+//         return innerMesg;
+//     }
+//     let innerResult = setPlace("Kathmandu");
+//     console.log("innerResult is ", innerResult);
+//     return innerResult;
+// }
+// let Res = welcome("Ram");
+// console.log("Last Result is ", Res);
+
+//  or  Dynamic
+// function welcome(name){
+//     function setPlace(location){
+//         let innerMesg = "Welcome " + name + " to " + location;
+//         return innerMesg;
+//     }
+//     // let innerResult = setPlace("Kathmandu");
+//     // console.log("innerResult is ", innerResult);
+//     return setPlace;
+// }
+// let Res = welcome("Ram")("Nepal");   //Closure function will store in the Res
+// // console.log("Last Result is ", Res("Kathmandu"));
+// console.log("Last Result is ", Res);
