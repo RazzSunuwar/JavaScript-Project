@@ -70,7 +70,40 @@
 
 
 
+
+
+// Prototype
+
+// In JS, every function has a property called Prototype
+
+// By default this is empty You can add properties and methods to it
+
 // Prototype Inheritance
+// JavaScript has prototype based Inheritance
+
+// Suppose there is a function X. When you create another function that is inherited from X, it will
+// inherited from X, it will inherit the methods and properties defined in X's prototype 
+
+// Create constructor 
+
+let EmpDetails = function(name, age){
+    this.name = name;
+    this.age = age;
+
+};
+
+EmpDetails.prototype.getName = function(){
+    return this.name;
+};
+
+EmpDetails.prototype.getAge = function(){
+    return this.age;
+};
+
+let emp1 = new EmpDetails('Andy', 35);
+let emp2 = new EmpDetails('Peter', 40);
+console.log(emp1.getName());
+console.log(emp2.getAge());
 
 
 
